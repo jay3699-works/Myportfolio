@@ -1,0 +1,93 @@
+/* Two-Column Layout and Mayur Patil Style */
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* General Layout */
+.container {
+    display: flex; /* Enable flexbox for the container */
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2rem; /* Add padding around the container */
+}
+
+/* Profile Section (Left Column) */
+#profile {
+    width: 300px; /* Set a fixed width for the profile section */
+    padding: 2rem; /* Add padding around the profile section */
+    background-color: #1E1E1E; /* Dark background color */
+    border-radius: 12px; /* Add rounded corners */
+    text-align: center; /* Center the text within the profile section */
+    margin-right: 2rem; /* Add right margin to separate from the content */
+    flex-shrink: 0; /* Prevent the profile section from shrinking */
+}
+
+#profile img {
+    width: 180px; /* Set the width of the profile image */
+    height: 180px; /* Set the height of the profile image */
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    margin-bottom: 1rem; /* Add margin below the image */
+}
+
+#profile h1 {
+    font-size: 1.5rem; /* Set the font size for the name */
+    margin-bottom: 0.5rem; /* Add margin below the name */
+}
+
+#profile p {
+    color: #aaa; /* Set the color for the contact information */
+    margin-bottom: 1rem; /* Add margin below the contact information */
+}
+
+#profile a {
+    color: #bbb; /* Set the color for the links */
+    text-decoration: none; /* Remove underlines from the links */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+#profile a:hover {
+    color: #fff; /* Change the link color on hover */
+}
+
+#profile button {
+    display: inline-block; /* Display the button as an inline block */
+    background-color: #333; /* Set the background color for the button */
+    color: #fff; /* Set the text color for the button */
+    padding: 0.75rem 1.25rem; /* Add padding to the button */
+    border-radius: 8px; /* Add rounded corners to the button */
+    text-decoration: none; /* Remove underlines from the button text */
+    margin-top: 1rem; /* Add margin above the button */
+    transition: background-color 0.3s ease; /* Add a smooth background color transition on hover */
+}
+
+/* Main Content (Right Column) */
+#content {
+    flex: 1; /* Allow the content section to take up the remaining space */
+    padding: 2rem; /* Add padding around the content section */
+    background-color: #1E1E1E; /* Dark background color */
+    border-radius: 12px; /* Add rounded corners */
+}
+
+section {
+    margin-bottom: 2rem; /* Ensure sections don't touch */
+    border-bottom: none; /* Remove the bottom border */
+}
+
+section h2 {
+    color: #fff; /* Set the color for the section headings */
+    border-bottom: 2px solid #555; /* Add a bottom border to the section headings */
+    padding-bottom: 0.5rem; /* Add padding below the section headings */
+}
+/* Project Section - Image Size */
+.project img {
+    max-width: 100%; /* Set a maximum width of 100% of the container */
+    height: auto; /* Allow the height to adjust proportionally */
+    display: block; /* Ensure the image is a block-level element */
+}

@@ -1,0 +1,1 @@
+//script code goes here ! or make sure link  <script src="script.js"></script>  is removed from  'index.html
